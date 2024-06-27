@@ -1,0 +1,24 @@
+.tool-page-layout {
+    position: relative;
+    min-height: 100vh;
+}
+
+.logo-link {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    z-index: 10; /* Ensure the logo is on top of other elements */
+}
+
+.logo {
+    width: 100px; /* Adjust the logo size */
+    height: auto;
+}
+
+.tool-page-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 50px; /* Add some padding to prevent content overlap with the logo */
+}

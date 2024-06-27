@@ -1,0 +1,88 @@
+/* Container for the entire sidebar */
+.sidebar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem; 
+    background: none; 
+    transition: width 0.3s; 
+}
+
+.sidebar-logo {
+    margin-bottom: 10rem;
+}
+
+.sidebar-logo img {
+    width: 100px;
+    height: auto;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.621); 
+    padding: 1rem 0.5rem; 
+    margin: 1rem 0; 
+    text-decoration: none; 
+    font-size: 1rem;
+    display: block;
+    background: rgba(65, 64, 64, 0.105);
+    border-radius: 5px;
+    transition: background 0.3s; 
+}
+
+.nav-link:hover {
+    background: rgba(0, 0, 0, 0.7); 
+}
+
+
+/* For screens larger than 768px */
+@media (min-width: 768px) {
+    .sidebar-container {
+        width: 250px;
+    }
+
+    .nav-link {
+        font-size: 1.15rem; 
+    }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 767px) {
+    .sidebar-container {
+        width: 150px;
+    }
+
+    .sidebar-logo img {
+        width: 80px; 
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+        padding: 0.8rem 0.5rem; 
+    }
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 479px) {
+    .sidebar-container {
+        position: relative;
+        width: 100%; 
+        height: auto;
+        padding: 0.5rem; 
+        align-items: center; 
+    }
+
+    .sidebar-logo {
+        margin-bottom: 1rem; 
+    }
+
+    .nav-link {
+        font-size: 0.85rem; 
+        margin: 0.5rem 0; 
+        padding: 0.6rem 0.3rem;
+    }
+}
